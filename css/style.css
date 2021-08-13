@@ -16,16 +16,30 @@ header li {
 header p {
   display: inline-block;
 }
-.heroImg {
+.mywork {
+  display:flex
   background-color: #EBEBEB;
   padding: 100px 15px;
 }
 .content {
   max-width: 300px;
-  margin: 0 auto;
+  display:flex: 
+  flex-direction: row;
+  width:33%
+  margin: 50px ;
   padding: 50px;
   background-color: #FFFFFF;
   text-align: center;
+
+  .gridcontainer {
+    display:grid;
+    grid-template-rows;
+  }
+
+  .workgrid {
+
+
+  }
 }
 button {
   padding: 15px;
@@ -46,4 +60,9 @@ footer ul {
 footer li {
   display: inline-block;
   padding: 0px 7px;
+}
+
+@media only screen and (max-width: 600px) {
+  flex-direction: column;
+  width: 100%;
 }
